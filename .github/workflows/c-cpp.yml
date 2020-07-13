@@ -7,14 +7,14 @@ on:
     branches: [ master ]
 
 jobs:
-#  build:
-#
-#    runs-on: ubuntu-latest
-#
-#    steps:
-#    - uses: actions/checkout@v2
-#    - name: make
-#      run: makeh
+  cbuild:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: make
+      run: cd bmfparser; g++ main.cpp -o bmfparser
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
